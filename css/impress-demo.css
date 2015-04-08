@@ -58,7 +58,9 @@ body {
     line-height: 1;
 }
 ol, ul {
-    list-style: none;
+  font-size: 20px;
+  position:relative;
+  left: 60px;
 }
 blockquote, q {
     quotes: none;
@@ -86,12 +88,12 @@ body {
     min-height: 740px;
 
     background: rgb(215, 215, 215);
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
-    background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:     -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:      -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(69, 69, 69)));
+    background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(69, 69, 69));
+    background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(69, 69, 69));
+    background:     -ms-radial-gradient(rgb(240, 240, 240), rgb(69, 69, 69));
+    background:      -o-radial-gradient(rgb(240, 240, 240), rgb(69, 69, 69));
+    background:         radial-gradient(rgb(240, 240, 240), rgb(69, 69, 69));
 }
 
 /*
@@ -222,17 +224,36 @@ a:focus {
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 
     font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 36px;
     letter-spacing: -1px;
 }
+.slide h1{
+    text-align:center;
+    position:relative;
+    line-height: 72px;
+    font-size: 50px;
+    top: 200px;
 
+}
+.slide h5{
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: 'Indie Flower', cursive;
+    font-size:25px;
+    text-align:center;
+    position:relative;
+    top: 220px;
+}
+.slide h6{
+    text-align:center;
+    position:relative;
+    top: 250px;
+}
 .slide q {
     display: block;
     font-size: 50px;
-    line-height: 72px;
-
-    margin-top: 100px;
+    line-height: 45px;
+    margin-top: 80px;
 }
 
 .slide q strong {
@@ -276,9 +297,13 @@ a:focus {
     -o-transform:      translateZ(50px);
     transform:         translateZ(50px);
 }
+#title p{
+    font-size:20px;
+    text-align: right;
+}
 
 #title .footnote {
-    font-size: 32px;
+    font-size: 30px;
 }
 
 /*
@@ -288,29 +313,38 @@ a:focus {
     Let's move to 'big thoughts' with centered text and custom font sizes.
 */
 #big {
-    width: 600px;
+    width: 1000px;
     text-align: center;
-    font-size: 60px;
-    line-height: 1;
+    font-size: 50px;
+    line-height: 100px;
 }
 
 #big b {
     display: block;
-    font-size: 250px;
-    line-height: 250px;
+    font-size: 80px;
+    line-height: 80px;
 }
 
 #big .thoughts {
-    font-size: 90px;
-    line-height: 150px;
+    font-size: 60px;
+    line-height: 60px;
 }
 
 /*
     'Tiny ideas' just need some tiny styling.
 */
 #tiny {
-    width: 500px;
+    width: 600px;
+    line-height: 180px;
+    font-size: 70px;
     text-align: center;
+}
+#tiny ol, ul{
+  line-height: 50px;
+  font-size: 30px;
+  position: relative;
+  left: 120px;
+  text-align: left;
 }
 
 /*
